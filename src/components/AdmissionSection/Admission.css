@@ -1,0 +1,150 @@
+.admission-section {
+    padding: 60px 0;
+    background: #f8fafc;
+    overflow: hidden;
+}
+
+.admission-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #111827;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.admission-description {
+    color: #6b7280;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+
+.admission-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.step span {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, .1);
+    color: #6366f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.step p {
+    margin: 0;
+    font-size: 17px;
+    color: #374151;
+}
+
+.admission-card {
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(20px);
+    border-radius: 35px;
+    padding: 50px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.admission-card h3 {
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.admission-card p {
+    color: #6b7280;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+.apply-btn {
+    width: 100%;
+    border: none !important;
+    background: #111827 !important;
+    color: white !important;
+    border-radius: 18px !important;
+    padding: 16px !important;
+    font-weight: 600 !important;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+
+.apply-btn:hover {
+    background: #545454 !important;
+    transform: translateY(-3px);
+}
+
+.detail-btn {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #111827;
+    border-radius: 18px;
+    padding: 16px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.detail-btn:hover {
+    background: #111827;
+    color: white;
+}
+
+
+@media (max-width: 991px) {
+
+    .admission-section {
+        padding: 40px 0;
+    }
+
+    .admission-title {
+        font-size: 2.5rem;
+    }
+
+    .admission-card {
+        padding: 35px;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .admission-title {
+        font-size: 2rem;
+    }
+
+    .step {
+        gap: 15px;
+    }
+
+    .step span {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+    }
+
+    .step p {
+        font-size: 15px;
+    }
+
+    .admission-card {
+        padding: 25px;
+        border-radius: 25px;
+    }
+
+}
